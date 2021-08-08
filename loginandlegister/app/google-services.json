@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "271666051971",
+    "project_id": "login-and-signup-38017",
+    "storage_bucket": "login-and-signup-38017.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271666051971:android:6df3d76c84a9d7a15e54b6",
+        "android_client_info": {
+          "package_name": "com.example.loginandlegister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271666051971-fn11cu49f8pd0dhsvq1cbbmvd2nrb801.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginandlegister",
+            "certificate_hash": "f9eae77923711517c0919ffac557a54d54b4d570"
+          }
+        },
+        {
+          "client_id": "271666051971-93dg7lb1b5ef566p0u26r357o9a1t195.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJuZRUiqW-fiyXKSVqZpg3GnfHoRnzOQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271666051971-93dg7lb1b5ef566p0u26r357o9a1t195.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
