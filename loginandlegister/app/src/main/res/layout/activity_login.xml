@@ -15,8 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="환영합니다🙋‍♀️"
-        android:textStyle="bold"/>
+        android:fontFamily="@font/nexonlight"
+        android:text="환영합니다🙋‍♀"
+        android:textColor="@color/black"
+         />
 
     <TextView
         style="@style/TextAppearance.MaterialComponents.Caption"
@@ -25,6 +27,8 @@
         android:layout_below="@+id/titleLabel"
         android:layout_centerHorizontal="true"
         android:textSize="15sp"
+        android:fontFamily="@font/nexonlight"
+        android:textColor="@color/black"
         android:text="로그인해서 우리의 동료가 되세요!" />
 
     <!--Email-->
@@ -39,8 +43,9 @@
             android:id="@+id/emailEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="이메일"/>
+            android:hint="이메일"
+            android:fontFamily="@font/nexonlight"
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:fontFamily="@font/nexonlight"
             android:hint="비밀번호"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,16 +73,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordTil"
         android:layout_marginTop="16dp"
-        android:text="동료되기" />
+        android:text="동료되기"
+        android:fontFamily="@font/nexonlight"/>
 
     <!--If not have account=sign up-->
     <TextView
         android:id="@+id/noAccount"
+        style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/no_account"
         android:layout_alignParentBottom="true"
-        android:padding="5dp"
         android:layout_centerHorizontal="true"
-        style="@style/TextAppearance.MaterialComponents.Caption"/>
+        android:padding="5dp"
+        android:text="@string/no_account" />
 </RelativeLayout>
