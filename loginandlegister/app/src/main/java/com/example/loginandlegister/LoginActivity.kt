@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
         //configure actionbar
         actionBar = supportActionBar!!
-        actionBar.title = "🤔로그인을 못하는건 아니겠죠?..."
+        actionBar.title = "MM(MovieMotion)"
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)

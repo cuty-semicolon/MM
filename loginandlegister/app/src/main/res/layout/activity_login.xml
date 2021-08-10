@@ -15,7 +15,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/nexonlight"
         android:text="환영합니다🙋‍♀"
         android:textColor="@color/black"
          />
@@ -27,7 +26,6 @@
         android:layout_below="@+id/titleLabel"
         android:layout_centerHorizontal="true"
         android:textSize="15sp"
-        android:fontFamily="@font/nexonlight"
         android:textColor="@color/black"
         android:text="로그인해서 우리의 동료가 되세요!" />
 
@@ -44,7 +42,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="이메일"
-            android:fontFamily="@font/nexonlight"
             android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +59,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:fontFamily="@font/nexonlight"
             android:hint="비밀번호"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,8 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordTil"
         android:layout_marginTop="16dp"
-        android:text="동료되기"
-        android:fontFamily="@font/nexonlight"/>
+        android:text="동료되기" />
 
     <!--If not have account=sign up-->
     <TextView

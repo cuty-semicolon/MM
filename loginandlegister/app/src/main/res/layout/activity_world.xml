@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
     tools:context=".WorldActivity"
-    android:background="@drawable/back"
+    android:background="@color/purple_900"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,13 +22,13 @@
             android:id="@+id/frameLayout" >
 
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="나의 친구여 왼쪽을 열어 시작하라!"
+                android:text="왼쪽을 열어 시작하세요"
+                android:textColor="@color/black"
                 android:textSize="28sp"
-                android:layout_gravity="center|bottom"
+                android:layout_gravity="center"
                 android:textStyle="bold"/>
         </FrameLayout>
 
