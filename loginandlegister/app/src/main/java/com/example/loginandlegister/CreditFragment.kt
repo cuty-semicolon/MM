@@ -18,7 +18,7 @@ class CreditFragment : Fragment() {
     ): View? {
         val binding = FragmentCreditBinding.inflate(inflater, container, false)
          binding.githubbtn.setOnClickListener {
-             val openURL = Intent(android.content.Intent.ACTION_VIEW)
+             val openURL = Intent(Intent.ACTION_VIEW)
              openURL.data = Uri.parse("https://github.com/leeyongjin0222")
              startActivity(openURL)
          }
