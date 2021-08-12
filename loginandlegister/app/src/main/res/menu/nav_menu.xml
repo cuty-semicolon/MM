@@ -3,23 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/nav_home"
-            android:title="홈"
-            android:icon="@drawable/ic_round_home_24"/>
-        <item
-            android:id="@+id/nav_credit"
-            android:title="제작자"
-            android:icon="@drawable/ic_round_emoji_events_24"/>
-
-    </group>
 
     <item android:title="장르">
         <menu>
 
-            <group>
+            <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_sports"
                     android:title="스포츠"
@@ -42,5 +30,13 @@
             </group>
         </menu>
     </item>
+    <group>
+
+        <item
+            android:id="@+id/nav_credit"
+            android:title="제작자"
+            android:icon="@drawable/ic_round_emoji_events_24"/>
+
+    </group>
 
 </menu>

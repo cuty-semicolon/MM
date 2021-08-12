@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.loginandlegister.databinding.FragmentHomeBinding
+import com.example.loginandlegister.databinding.FragmentHorrorBinding
 
 
 class HorrorFragment : Fragment() {
@@ -15,7 +15,7 @@ class HorrorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val binding = FragmentHorrorBinding.inflate(inflater, container, false)
 
         return binding.root
     }

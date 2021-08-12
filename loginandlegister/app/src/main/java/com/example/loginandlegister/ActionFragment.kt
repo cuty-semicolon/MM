@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.loginandlegister.databinding.FragmentHomeBinding
+import com.example.loginandlegister.databinding.FragmentActionBinding
 
 class ActionFragment : Fragment() {
 
@@ -13,7 +13,7 @@ class ActionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val binding = FragmentActionBinding.inflate(inflater, container, false)
 
         return binding.root
     }

@@ -20,7 +20,7 @@
         android:id="@+id/username"
         android:paddingTop="0dp"
         android:textSize="20sp"
-        android:text="동료들아 즐겨라"
+        android:text="MovieMotion"
         android:textColor="@color/black"
         android:textStyle="bold"/>
 

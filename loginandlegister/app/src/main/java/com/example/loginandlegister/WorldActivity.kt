@@ -30,8 +30,6 @@ class WorldActivity : AppCompatActivity() {
             it.isChecked = true
 
             when(it.itemId){
-
-                R.id.nav_home -> replaceFragment(HomeFragment(),it.title.toString())
                 R.id.nav_credit -> replaceFragment(CreditFragment(),it.title.toString())
                 R.id.nav_sports -> replaceFragment(SportsFragment(),it.title.toString())
                 R.id.nav_romance -> replaceFragment(RomanceFragment(),it.title.toString())
