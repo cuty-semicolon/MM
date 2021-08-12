@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface MovieApiInterface {
 
-    @GET("/3/movie/popular?api_key=<<api_key>>&language=ko-KR&page=10")
-    fun getMovieListList(): Call<MovieResponse>
+    @GET("/3/movie/popular?api_key=e9abfac4de2b70c514d1daa5a88ebc2f")
+    fun getMovieList(): Call<MovieResponse>
 }

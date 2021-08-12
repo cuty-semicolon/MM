@@ -32,6 +32,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="우리들의 세상으로 출발!"/>
-
+   <Button
+       android:id="@+id/popularbtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="🏆  인기영화 TOP20"/>
 
 </LinearLayout>

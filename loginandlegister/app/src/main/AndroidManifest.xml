@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndLegister">
         <activity
+            android:name=".PopularActivity"
+            android:exported="true" />
+        <activity
             android:name=".WorldActivity"
             android:exported="true" />
         <activity

@@ -39,6 +39,10 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(Intent(this,WorldActivity::class.java))
             finish()
         }
+        binding.popularbtn.setOnClickListener {
+            startActivity(Intent(this,PopularActivity::class.java))
+        }
+
     }
 
     private fun checkUser() {

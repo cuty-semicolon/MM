@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
         //configure actionbar
         actionBar = supportActionBar!!
-        actionBar.title = "MM(MovieMotion)"
+        actionBar.title = "MovieMotion"
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)
@@ -56,6 +56,7 @@ class LoginActivity : AppCompatActivity() {
             //before logging in, validate data
             validateData()
         }
+
     }
 
     private fun validateData() {
