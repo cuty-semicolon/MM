@@ -24,7 +24,7 @@ class ProfileActivity : AppCompatActivity() {
 
         //configure ActionBar
         actionbar = supportActionBar!!
-        actionbar.title = "Profile"
+        actionbar.title = "🖖선택의 갈림길"
 
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
