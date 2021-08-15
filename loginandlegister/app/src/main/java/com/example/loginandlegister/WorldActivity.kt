@@ -35,6 +35,7 @@ class WorldActivity : AppCompatActivity() {
                 R.id.nav_romance -> replaceFragment(RomanceFragment(),it.title.toString())
                 R.id.nav_horror -> replaceFragment(HorrorFragment(),it.title.toString())
                 R.id.nav_action -> replaceFragment(ActionFragment(),it.title.toString())
+                R.id.nav_logout -> replaceFragment(OutFragment(),it.title.toString())
             }
 
             true
