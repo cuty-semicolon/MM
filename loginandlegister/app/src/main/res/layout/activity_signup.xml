@@ -78,4 +78,14 @@
         android:layout_below="@+id/passwordTil"
         android:layout_marginTop="16dp"/>
 
+    <TextView
+        android:id="@+id/gologin"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="@string/Gologin" />
+
 </RelativeLayout>
