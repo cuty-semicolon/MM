@@ -3,12 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple_900"
     tools:context=".OutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+<Button
+    android:id="@+id/outbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_round_call_split_24"
+    android:text="갈림길로 돌아가기"
+    android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="242dp"
+        android:layout_height="231dp"
+        android:src="@drawable/outpicture"
+        android:layout_gravity="bottom|right"/>
 
 </FrameLayout>
