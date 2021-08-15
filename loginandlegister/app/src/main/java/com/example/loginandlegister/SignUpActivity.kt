@@ -35,7 +35,7 @@ class SignUpActivity : AppCompatActivity() {
 
         //Configure Actionbar
         actionBar = supportActionBar!!
-        actionBar.title = "📢우리의 동료가 되는거에요!"
+        actionBar.hide()
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
 
@@ -63,11 +63,11 @@ class SignUpActivity : AppCompatActivity() {
         //valid
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //invalid email format
-            binding.emailEt.error = "Invaid email format"
+            binding.emailEt.error = "이메일 형식에 맞게 써주세요"
         }
         else if (TextUtils.isEmpty(password)) {
             //password length is less than 6
-            binding.passwordEt.error = "Password must atleast 6 characters long"
+            binding.passwordEt.error = "비밀번호는 최소 6자 이상이어야합니다"
         }
         else{
             //data is va;id,continue signup

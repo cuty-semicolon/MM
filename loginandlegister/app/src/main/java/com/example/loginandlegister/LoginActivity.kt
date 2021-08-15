@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
         //configure actionbar
         actionBar = supportActionBar!!
-        actionBar.title = "MovieMotion"
+        actionBar.hide()
 
         //configure progress dialog
         progressDialog = ProgressDialog(this)
@@ -66,8 +66,8 @@ class LoginActivity : AppCompatActivity() {
 
         //validate data
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            //invalid email format
-            binding.emailEt.error = "Invalid email format"
+            //이메일 형식에 안 맞게 썻을때
+            binding.emailEt.error = "이메일 형식에 맞게 쓰세요"
         }
         else if(TextUtils.isEmpty(password)){
             //no password entered

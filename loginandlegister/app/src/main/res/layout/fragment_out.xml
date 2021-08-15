@@ -15,9 +15,9 @@
     android:layout_gravity="center"/>
 
     <ImageView
-        android:layout_width="242dp"
-        android:layout_height="231dp"
-        android:src="@drawable/outpicture"
-        android:layout_gravity="bottom|right"/>
+        android:layout_width="196dp"
+        android:layout_height="181dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/outpicture" />
 
 </FrameLayout>
