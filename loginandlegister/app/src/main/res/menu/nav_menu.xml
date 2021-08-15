@@ -37,6 +37,11 @@
             android:title="개발자"
             android:icon="@drawable/ic_round_emoji_events_24"/>
 
+        <item
+            android:id="@+id/nav_logout"
+            android:title="갈림길로"
+            android:icon="@drawable/ic_round_call_split_24"/>
+
     </group>
 
 </menu>
