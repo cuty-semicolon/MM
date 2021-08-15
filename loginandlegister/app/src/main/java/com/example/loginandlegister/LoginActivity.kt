@@ -85,12 +85,14 @@ class LoginActivity : AppCompatActivity() {
             .addOnSuccessListener {
                 //login success
                 progressDialog.dismiss()
-                Toast.makeText(this, "Login success", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "환영합니다", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, ProfileActivity::class.java))
             }
             .addOnFailureListener { e->
                 //login failed
                 progressDialog.dismiss()
+                Toast.makeText(this, "정보가 일치하지 않습니다", Toast.LENGTH_SHORT).show()
+                startActivity((Intent(this, LoginActivity::class.java)))
                 //get user info
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
