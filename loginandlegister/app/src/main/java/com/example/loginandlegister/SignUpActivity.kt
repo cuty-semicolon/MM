@@ -48,6 +48,11 @@ class SignUpActivity : AppCompatActivity() {
         //init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()
 
+        //go login
+        binding.gologin.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
         //handle click,begin signup
         binding.SignUpBtn.setOnClickListener {
             //validate Data
