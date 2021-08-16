@@ -64,7 +64,6 @@ class SignUpActivity : AppCompatActivity() {
         //get data
         email = binding.emailEt.text.toString().trim()
         password = binding.passwordEt.text.toString().trim()
-
         //valid
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //invalid email format

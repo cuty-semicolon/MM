@@ -59,6 +59,10 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        // super.onBackPressed()
+    }
+
     private fun validateData() {
         //get data
         email = binding.emailEt.text.toString().trim()
