@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_900"
+    android:background="@color/pale_black"
     tools:context=".PopularActivity" >
 
     <androidx.core.widget.NestedScrollView
@@ -28,8 +28,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:text="영화 목록"
-                android:textColor="@color/black"
+                android:text="인기영화🏆"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="🏆인기순 영화🏆"
-                android:textColor="@color/black"
+                android:text="한국 Top20"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
 
             <androidx.recyclerview.widget.RecyclerView
