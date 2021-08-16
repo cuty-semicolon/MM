@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".SignUpActivity"
-    android:background="@color/purple_900">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/titleLabel"
@@ -44,6 +44,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="이메일"
+            android:textStyle="bold"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -64,19 +65,21 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:hint="비밀번호"
+            android:textStyle="bold"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--login button-->
     <Button
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:id="@+id/SignUpBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="동료가입"
         android:layout_below="@+id/passwordTil"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:textStyle="bold"
+        android:text="동료가입" />
 
     <TextView
         android:id="@+id/gologin"
