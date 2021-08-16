@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_900"
+    android:background="@color/pale_black"
     tools:context=".OutFragment">
 
 <Button
@@ -12,11 +12,13 @@
     android:layout_height="wrap_content"
     android:drawableLeft="@drawable/ic_round_call_split_24"
     android:text="갈림길로 돌아가기"
+    android:textColor="@color/black"
+    android:backgroundTint="@color/white"
     android:layout_gravity="center"/>
 
     <ImageView
-        android:layout_width="196dp"
-        android:layout_height="181dp"
+        android:layout_width="208dp"
+        android:layout_height="184dp"
         android:layout_gravity="bottom"
         android:src="@drawable/outpicture" />
 

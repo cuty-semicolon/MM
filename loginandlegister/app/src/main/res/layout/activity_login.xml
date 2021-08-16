@@ -71,7 +71,7 @@
         android:layout_below="@+id/passwordTil"
         android:layout_marginTop="16dp"
         android:text="동료되기"
-
+        android:backgroundTint="@color/black"
         android:textStyle="bold" />
 
     <!--If not have account=sign up-->
