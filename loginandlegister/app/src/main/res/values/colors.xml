@@ -10,5 +10,8 @@
     <color name="purple_900">#B1BCFF</color>
     <color name="underLine">#BDB8B8</color>
     <color name="gray">#7A7EBB</color>
-    <color name="test">#E89CF7</color>
+    <color name="green">#81c147</color>
+    <color name="red">#FF4040</color>
+    <color name="yellow">#FFF642</color>
+
 </resources>
