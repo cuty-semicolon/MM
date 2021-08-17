@@ -45,6 +45,10 @@ class ProfileActivity : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+     //   super.onBackPressed()
+    }
+
     private fun checkUser() {
         //check user is logged in or not
         val firebaseUser = firebaseAuth.currentUser
