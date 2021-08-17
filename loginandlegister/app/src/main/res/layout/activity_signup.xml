@@ -32,8 +32,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTil"
         android:layout_above="@+id/passwordTil"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -53,8 +51,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
         app:passwordToggleEnabled="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
@@ -76,11 +72,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordTil"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:text="동료가입"
         android:backgroundTint="@color/black"
+        android:text="동료가입"
         android:textStyle="bold" />
 
     <TextView
