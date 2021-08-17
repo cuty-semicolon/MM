@@ -91,7 +91,7 @@ class SignUpActivity : AppCompatActivity() {
                 //get current user
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
-                Toast.makeText(this, "Account created with email $email", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "이메일로 계정이 생성되었습니다 $email", Toast.LENGTH_SHORT).show()
 
                 //open profile
                 startActivity(Intent(this,ProfileActivity::class.java))
@@ -100,7 +100,7 @@ class SignUpActivity : AppCompatActivity() {
             .addOnFailureListener {e->
                 //singup failed
                 progressDialog.dismiss()
-                Toast.makeText(this, "SignUp Failed due to ${e.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "이미 계정이 있습니다 ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
 }
