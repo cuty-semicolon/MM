@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="🙋‍♂환영합니다🙋‍♀"
+        android:text="환영합니다"
         android:textColor="@color/black" />
 
     <TextView
