@@ -2,6 +2,7 @@ package com.example.loginandlegister
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.loginandlegister.models.Movie
 import com.example.loginandlegister.models.MovieResponse
@@ -14,9 +15,13 @@ import retrofit2.Response
 
 class PopularActivity : AppCompatActivity() {
 
+    private lateinit var  actionBar: ActionBar
+
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_popular)
+            actionBar = supportActionBar!!
+            actionBar.hide()
             movies_list.layoutManager = LinearLayoutManager(this)
             movies_list.setHasFixedSize(true)
             getMovieData { movies: List<Movie> ->

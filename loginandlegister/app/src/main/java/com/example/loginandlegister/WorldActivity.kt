@@ -13,11 +13,15 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class WorldActivity : AppCompatActivity() {
+    private lateinit var actionBar: androidx.appcompat.app.ActionBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_LoginAndLegister)
         setContentView(R.layout.activity_world)
+
+        actionBar = supportActionBar!!
+        actionBar.hide()
 
 
             val tableLayout=findViewById<TabLayout>(R.id.tab_layout)
