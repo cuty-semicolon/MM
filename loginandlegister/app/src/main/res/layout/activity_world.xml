@@ -1,55 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawerLayout"
-    tools:context=".WorldActivity"
-    android:background="@color/pale_black"
-    >
+    android:orientation="vertical"
+    tools:context=".WorldActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/frameLayout" >
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="왼쪽을 열어 \n원하는 장르를\n골라보세유"
-                android:textColor="@color/white"
-                android:textSize="28sp"
-                android:layout_gravity="center"
-                android:textStyle="bold"/>
-
-            <ImageView
-                android:layout_width="189dp"
-                android:layout_height="207dp"
-                android:layout_gravity="bottom"
-                android:src="@drawable/mainpicture"/>
-        </FrameLayout>
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/nav_view"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"/>
+        android:id="@+id/view_pager_2"/>
 
-
-</androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

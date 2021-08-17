@@ -1,64 +1,54 @@
 package com.example.loginandlegister
 
+import android.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class WorldActivity : AppCompatActivity() {
-    lateinit var toggle : ActionBarDrawerToggle
-    lateinit var drawerLayout: DrawerLayout
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_LoginAndLegister)
         setContentView(R.layout.activity_world)
 
-        drawerLayout = findViewById(R.id.drawerLayout)
-        val navView : NavigationView = findViewById(R.id.nav_view)
 
-        toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+            val tableLayout=findViewById<TabLayout>(R.id.tab_layout)
+            val viewPager2=findViewById<ViewPager2>(R.id.view_pager_2)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            val adapter=ViewPagerAdapter(supportFragmentManager, lifecycle)
 
-        navView.setNavigationItemSelectedListener {
+            viewPager2.adapter=adapter
 
-            it.isChecked = true
+            TabLayoutMediator(tableLayout,viewPager2){tab,position->
+                when(position){
+                    0->{
+                        tab.text="액션"
+                    }
+                    1->{
+                        tab.text="공포"
+                    }
+                    2->{
+                        tab.text="로맨스"
+                    }
+                    3->{
+                        tab.text="스포츠"
+                    }
+                    4->{
+                        tab.text="개발자"
+                    }
+                    5->{
+                        tab.text="갈림길"
+                    }
+                }
 
-            when(it.itemId){
-                R.id.nav_credit -> replaceFragment(CreditFragment(),it.title.toString())
-                R.id.nav_sports -> replaceFragment(SportsFragment(),it.title.toString())
-                R.id.nav_romance -> replaceFragment(RomanceFragment(),it.title.toString())
-                R.id.nav_horror -> replaceFragment(HorrorFragment(),it.title.toString())
-                R.id.nav_action -> replaceFragment(ActionFragment(),it.title.toString())
-                R.id.nav_logout -> replaceFragment(OutFragment(),it.title.toString())
-            }
-
-            true
-
+            }.attach()
         }
-    }
-
-    private fun replaceFragment(fragment: Fragment, title : String){
-
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frameLayout,fragment)
-        fragmentTransaction.commit()
-        drawerLayout.closeDrawers()
-        setTitle(title)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        if (toggle.onOptionsItemSelected(item)){
-            return true
-        }
-
-        return super.onOptionsItemSelected(item)
-    }
 }
